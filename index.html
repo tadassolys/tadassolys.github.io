@@ -5,42 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tadas Šolys Portfolio">
   <title>Tadas Šolys | Software Developer Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #333;
+      background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 40px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     h1 {
       margin: 0;
       font-size: 2.5em;
     }
     section {
-      margin: 30px;
+      margin: 50px auto;
+      max-width: 1200px;
+      padding: 0 20px;
     }
     .intro {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     .intro h2 {
-      font-size: 1.8em;
-      color: #333;
+      font-size: 2em;
+      color: #34495e;
     }
     .intro p {
       font-size: 1.2em;
       color: #666;
+      line-height: 1.5;
     }
     .projects {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
       justify-content: center;
     }
     .project-card {
@@ -48,29 +53,48 @@
       border: 1px solid #ddd;
       padding: 20px;
       width: 300px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
     }
     .project-card h3 {
-      font-size: 1.5em;
+      font-size: 1.6em;
+      color: #2c3e50;
       margin-top: 0;
     }
     .project-card p {
       color: #555;
+      line-height: 1.6;
     }
     .project-card a {
       text-decoration: none;
-      color: #0066cc;
+      color: #2980b9;
       font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      transition: color 0.2s;
+    }
+    .project-card a:hover {
+      color: #1abc9c;
     }
     footer {
-      background-color: #333;
+      background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 10px 0;
-      position: fixed;
+      padding: 20px 0;
+      position: relative;
       bottom: 0;
       width: 100%;
+    }
+    footer a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -85,38 +109,38 @@
     <p>
       Hi, I'm Tadas Šolys, a recent graduate with a Bachelor's degree in Software Development. 
       I'm passionate about coding, solving problems, and building innovative software solutions.
-      Below are some of the projects I’ve worked on, feel free to check them out!
+      Below are some of the projects I’ve worked on; feel free to check them out!
     </p>
   </section>
 
   <section class="projects">
     <div class="project-card">
-      <h3>Landmark recognition</h3>
-      <p>This Android application, created as part of a student project, is designed to recognize Lithuania landmark objects in images using machine learning models. Developed using TensorFlow Lite, the app allows users to either capture photos or upload existing images for object detection. Upon analysis, the app provides real-time feedback on the identified objects and offers additional information about them. Through this project, I aimed to explore the integration of machine learning into mobile applications while gaining practical experience in Android app development.</p>
+      <h3>Landmark Recognition</h3>
+      <p>This Android application recognizes Lithuanian landmarks using machine learning. Developed with TensorFlow Lite, users can capture or upload images for real-time analysis.</p>
       <a href="https://github.com/tadassolys/Lankytinu_objektu_atpazinimas" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project-card">
       <h3>Rezervis</h3>
-      <p>Fullstack Reservation Management System, built using Laravel, Vue.js and Vuetify. It provides a user interface for managing room, equipment, and vehicle reservations. The frontend interacts with the backend API to handle user authentication, CRUD operations for reservable items, and reservation management.</p>
+      <p>A fullstack Reservation Management System built with Laravel and Vue.js, enabling users to manage room, equipment, and vehicle reservations.</p>
       <a href="https://github.com/tadassolys/Rezervis_frontend" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project-card">
       <h3>PassMan</h3>
-      <p>PassMan is a simple and secure password manager application for Android, built using SQLCipher for database encryption. It allows users to store and manage their usernames and passwords securely. The app provides functionality for adding, viewing, searching, copying, and deleting credentials, as well as exporting the database for backup purposes.</p>
+      <p>A secure password manager for Android using SQLCipher for encryption, allowing users to manage their credentials safely.</p>
       <a href="https://github.com/tadassolys/Passman" target="_blank">View on GitHub</a>
     </div>
     
     <div class="project-card">
-      <h3>Other projects</h3>
-      <p>Main Github page.</p>
+      <h3>Other Projects</h3>
+      <p>Explore my main GitHub page for additional projects.</p>
       <a href="https://github.com/tadassolys" target="_blank">View on GitHub</a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Tadas Šolys | <a href="mailto:tadassolys@gmail.com" style="color: #fff;">Contact Me</a></p>
+    <p>&copy; 2024 Tadas Šolys | <a href="mailto:tadassolys@gmail.com">Contact Me</a></p>
   </footer>
 </body>
 </html>
