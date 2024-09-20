@@ -1,15 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="google-site-verification" content="lK0Yc4PlqjBoOTBNauMtIzlCjQbIruP84Z_ee_5_dIY" />
-  <title>Welcome to My GitHub Pages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tadas Šolys Portfolio">
+  <title>Tadas Šolys | Software Developer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    section {
+      margin: 30px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .intro h2 {
+      font-size: 1.8em;
+      color: #333;
+    }
+    .intro p {
+      font-size: 1.2em;
+      color: #666;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .project-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .project-card h3 {
+      font-size: 1.5em;
+      margin-top: 0;
+    }
+    .project-card p {
+      color: #555;
+    }
+    .project-card a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
- <h1>Welcome to My GitHub Pages Profile Site!</h1>
+  <header>
+    <h1>Tadas Šolys</h1>
+    <p>Software Developer | Recent Graduate</p>
+  </header>
 
-  <h2>My GitHub Projects</h2>
-  <ul>
-    <li><a href="https://github.com/tadassolys/project1" target="_blank">Project 1</a></li>
-    <li><a href="https://github.com/tadassolys/project2" target="_blank">Project 2</a></li>
-    <li><a href="https://github.com/tadassolys/project3" target="_blank">Project 3</a></li>
+  <section class="intro">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Tadas Šolys, a recent graduate with a Bachelor's degree in Software Development. 
+      I'm passionate about coding, solving problems, and building innovative software solutions.
+      Below are some of the projects I’ve worked on, feel free to check them out!
+    </p>
+  </section>
+
+  <section class="projects">
+    <div class="project-card">
+      <h3>Landmark recognition</h3>
+      <p>This Android application, created as part of a student project, is designed to recognize Lithuania landmark objects in images using machine learning models. Developed using TensorFlow Lite, the app allows users to either capture photos or upload existing images for object detection. Upon analysis, the app provides real-time feedback on the identified objects and offers additional information about them. Through this project, I aimed to explore the integration of machine learning into mobile applications while gaining practical experience in Android app development.</p>
+      <a href="https://github.com/tadassolys/Lankytinu_objektu_atpazinimas" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Rezervis</h3>
+      <p>Fullstack Reservation Management System, built using Laravel, Vue.js and Vuetify. It provides a user interface for managing room, equipment, and vehicle reservations. The frontend interacts with the backend API to handle user authentication, CRUD operations for reservable items, and reservation management.</p>
+      <a href="https://github.com/tadassolys/Rezervis_frontend" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>PassMan</h3>
+      <p>PassMan is a simple and secure password manager application for Android, built using SQLCipher for database encryption. It allows users to store and manage their usernames and passwords securely. The app provides functionality for adding, viewing, searching, copying, and deleting credentials, as well as exporting the database for backup purposes.</p>
+      <a href="https://github.com/tadassolys/Passman" target="_blank">View on GitHub</a>
+    </div>
+    
+    <div class="project-card">
+      <h3>Other projects</h3>
+      <p>Main Github page.</p>
+      <a href="https://github.com/tadassolys" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Tadas Šolys | <a href="mailto:tadassolys@gmail.com" style="color: #fff;">Contact Me</a></p>
+  </footer>
 </body>
 </html>
